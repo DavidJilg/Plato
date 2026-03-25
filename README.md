@@ -1,5 +1,5 @@
 # Plato: The Planning Ontology
-Plato is an ontology schema for modeling semantic information used in AI planning. It can be used in conjunction with the Knowledge Transformation Framework to maintain planning domains in an ontology and the dynamically generate PDDL domains/problems.
+Plato is an ontology schema for modeling semantic information used in AI planning. It can be used in conjunction with the Knowledge Transformation Framework (KTF, https://github.com/DavidJilg/KTF) to maintain planning domains in an ontology and the dynamically generate PDDL domains/problems.
 
 For detailed information, see `Plato_Specification_1.0.0.pdf`.
 
