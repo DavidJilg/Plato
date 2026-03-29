@@ -11,11 +11,11 @@
   },
 
   "terms:created": "2024-28-04",
-  "terms:title": "An exemplary ontology showing of the capabilities of Plato: The planning ontology",
+  "terms:title": "An exemplary ontology showing of the shared production capabilities of Plato: The planning ontology",
 
   "annotationProperties": "annotationProperties.json",
   "classes": "classes.json",
   "objectProperties": "objectProperties.json",
   "dataProperties": "dataProperties.json",
-  "individuals": ["individuals.json", "ExemplaryPlatoOntology"]
+  "individuals": ["individuals.json", "SharedProduction"]
 }

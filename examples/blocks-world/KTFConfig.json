@@ -1,13 +1,11 @@
 {
   "consumerConfiguration": {
     "consumer": "Plato",
-    //This path has to be absolute or relative to the working directory of the application. It cannot be relative to the location of the configuration file.
     "ontologyPath": "BlocksWorld.owl"
   },
 
   "producerConfiguration":  {
     "producer": "pddl",
-    //These paths have to be absolute or relative to the working directory of the application. It cannot be relative to the location of the configuration file.
     "domainFilePath": "domain.pddl",
     "problemFilePath": "problem.pddl"
   },
