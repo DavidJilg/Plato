@@ -15,8 +15,8 @@
   "domainType": "NON_TEMPORAL",
 
   "initialState": [],
-  "goalState": [],
-  "planningObjects": [],
+  "goalState": [["isPrinted", "Workpiece1"]],
+  "planningObjects": [["Workpiece1", "PrintingWorkpiece"]],
   "metric": "EnergyConservingMetric",
 
   "domainName": "advanced_domain",

@@ -1,6 +1,7 @@
 (define (problem advanced_problem)
    (:domain advanced_domain)
    (:objects
+      Workpiece1 - PrintingWorkpiece
    )
    (:init
       (canReachNozzleTemperature AnetA8v2 NozzleTemperature_0)
@@ -143,7 +144,7 @@
       (= (NumericValuesFunction NozzleTemperature_80) 80.0)
       (= (NumericValuesFunction NozzleTemperature_90) 90.0)
    )
-   (:goal (and
+   (:goal (and (isPrinted Workpiece1)
    ))
    (:metric minimize(+ (* 1.0 (MaterialCost)) (* 2.0 (EnergyCost))))
 )
