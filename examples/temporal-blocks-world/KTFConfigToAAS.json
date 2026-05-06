@@ -1,14 +1,14 @@
 {
   "consumerConfiguration": {
     "consumer": "Plato",
-    "ontologyPath": "SharedProduction.owl"
+    "ontologyPath": "TemporalBlocksWorld.owl"
   },
 
   "producerConfiguration":  {
     "producer": "aas",
 	  "aas": [
 	  {
-		"aasFilePath": "shared-production-aas",
+		"aasFilePath": "temporal-blocks-world",
 		"dataFormat": "JSON",
 		"aasName": "KTF_Planning_Domain",
 		"smPlanningDomainName": "PlanningDomainMetaData",
@@ -29,7 +29,7 @@
 
   },
   
-  "domainType": "NON_TEMPORAL",
+  "domainType": "TEMPORAL",
 
   "removeNumericExpressions": false,
 
@@ -38,8 +38,8 @@
   "planningObjects": [],
   "metric": "TotalCostMetric",
 
-  "domainName": "shared_production_domain",
-  "problemName": "shared_production_problem",
+  "domainName": "temporal_blocks_world_domain",
+  "problemName": "temporal_blocks_world_problem",
 
   "printConfiguration": true
 }
