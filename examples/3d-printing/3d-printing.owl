@@ -10,8 +10,6 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://dfki.de/ontologies/plato">
         <terms:created>2024-28-04</terms:created>
-        <terms:license>Copyright 2024-2024 - German Research Centre for Artificial Intelligence</terms:license>
-        <terms:right>German Research Centre for Artificial Intelligence (DFKI)</terms:right>
         <terms:title>An exemplary ontology showing of the capabilities of Plato: The planning ontology</terms:title>
     </owl:Ontology>
     
