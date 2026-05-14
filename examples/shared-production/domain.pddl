@@ -1,5 +1,5 @@
 (define (domain shared_production_domain)
-   (:requirements :action-costs :negative-preconditions :typing)
+   (:requirements :negative-preconditions :numeric-fluents :typing)
    (:types
       Boolean - root
       Camera - Machine
@@ -39,8 +39,6 @@
       (QualityChecked ?Workpiece - Workpiece)
    )
    (:functions
-      (Check_Workpiece_Quality_Cost_0 ?Factory - Factory ?Workpiece - Workpiece ?Camera - Camera)
-      (Check_Workpiece_Quality_Cost_1 ?Factory - Factory ?Workpiece - Workpiece ?Camera - Camera)
       (CO2Efficiency ?Factory - Factory)
       (CO2EfficiencyWeight)
       (CostEfficiency ?Factory - Factory)
@@ -49,13 +47,7 @@
       (DeliveryDelayCost)
       (DeliveryTimeWeight)
       (Distance ?Warehouse - Warehouse ?Warehouse2 - Warehouse)
-      (Print_Workpiece_Cost_0 ?Factory - Factory ?Workpiece - Workpiece ?Machine - Printer ?Material - Material)
-      (Print_Workpiece_Cost_1 ?Factory - Factory ?Workpiece - Workpiece ?Machine - Printer ?Material - Material)
       (total-cost)
-      (Transport_Workpiece_Between_Warehouses_Cost_0 ?Workpiece - Workpiece ?Warehouse - Warehouse ?Warehouse2 - Warehouse)
-      (Transport_Workpiece_Cost_0 ?Factory - Factory ?Workpiece - Workpiece ?Machine - Machine ?Machine2 - Machine ?Robot - Robot)
-      (Transport_Workpiece_Cost_1 ?Factory - Factory ?Workpiece - Workpiece ?Machine - Machine ?Machine2 - Machine ?Robot - Robot)
-      (Wait_For_Factory_Availability_Cost_0)
    )
    (:action Check_Workpiece_Quality
       :parameters (?Factory - Factory ?Workpiece - Workpiece ?Camera - Camera)
@@ -67,8 +59,8 @@
       )
       :effect (and
          (QualityChecked ?Workpiece)
-         (increase (total-cost) (Check_Workpiece_Quality_Cost_0 ?Factory ?Workpiece ?Camera))
-         (increase (total-cost) (Check_Workpiece_Quality_Cost_1 ?Factory ?Workpiece ?Camera))
+         (increase (total-cost) (* (CostEfficiency ?Factory) (CostEfficiencyWeight)))
+         (increase (total-cost) (* (CO2Efficiency ?Factory) (CO2EfficiencyWeight)))
       )
    )
    (:action Print_Workpiece
@@ -86,8 +78,8 @@
          (At ?Workpiece ?Machine)
          (IsMadeOf ?Workpiece ?Material)
          (IsPrinted ?Workpiece)
-         (increase (total-cost) (Print_Workpiece_Cost_0 ?Factory ?Workpiece ?Machine ?Material))
-         (increase (total-cost) (Print_Workpiece_Cost_1 ?Factory ?Workpiece ?Machine ?Material))
+         (increase (total-cost) (* (CO2Efficiency ?Factory) (CO2EfficiencyWeight)))
+         (increase (total-cost) (* (CostEfficiency ?Factory) (CostEfficiencyWeight)))
       )
    )
    (:action Transport_Workpiece
@@ -107,8 +99,8 @@
          (not
             (At ?Workpiece ?Machine)
          )
-         (increase (total-cost) (Transport_Workpiece_Cost_0 ?Factory ?Workpiece ?Machine ?Machine2 ?Robot))
-         (increase (total-cost) (Transport_Workpiece_Cost_1 ?Factory ?Workpiece ?Machine ?Machine2 ?Robot))
+         (increase (total-cost) (* (CostEfficiency ?Factory) (CostEfficiencyWeight)))
+         (increase (total-cost) (* (CO2Efficiency ?Factory) (CO2EfficiencyWeight)))
       )
    )
    (:action Transport_Workpiece_Between_Warehouses
@@ -121,7 +113,7 @@
          (not
             (At ?Workpiece ?Warehouse)
          )
-         (increase (total-cost) (Transport_Workpiece_Between_Warehouses_Cost_0 ?Workpiece ?Warehouse ?Warehouse2))
+         (increase (total-cost) (* (DeliveryCostWeight) (Distance ?Warehouse ?Warehouse2)))
       )
    )
    (:action Wait_For_Factory_Availability
@@ -132,7 +124,7 @@
          (forall (?Factory - Factory)
             (IsAvailable ?Factory)
          )
-         (increase (total-cost) (Wait_For_Factory_Availability_Cost_0))
+         (increase (total-cost) (* (DeliveryTimeWeight) (DeliveryDelayCost)))
       )
    )
 

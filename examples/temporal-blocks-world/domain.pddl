@@ -19,15 +19,15 @@
       :parameters (?block1 - block ?block2 - block)
       :duration
          (= ?duration 10.0)
-      :precondition (and
+      :condition (and
          (at start
             (On ?block1 ?block2)
          )
          (at start
             (TopClear ?block1)
          )
-         (forall (?block3 - block)
-            (at start
+         (at start
+            (forall (?block3 - block)
                (not
                   (Holding ?block3)
                )
@@ -52,15 +52,15 @@
       :parameters (?block1 - block)
       :duration
          (= ?duration 5.0)
-      :precondition (and
+      :condition (and
          (at start
             (OnGround ?block1)
          )
          (at start
             (TopClear ?block1)
          )
-         (forall (?block2 - block)
-            (at start
+         (at start
+            (forall (?block2 - block)
                (not
                   (Holding ?block2)
                )
@@ -77,7 +77,7 @@
       :parameters (?block1 - block ?block2 - block)
       :duration
          (= ?duration 10.0)
-      :precondition (and
+      :condition (and
          (at start
             (Holding ?block1)
          )
@@ -105,7 +105,7 @@
       :parameters (?block1 - block)
       :duration
          (= ?duration 5.0)
-      :precondition (and
+      :condition (and
          (at start
             (Holding ?block1)
          )

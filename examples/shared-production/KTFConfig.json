@@ -12,7 +12,7 @@
   
   "domainType": "NON_TEMPORAL",
 
-  "removeNumericExpressions": true,
+  "removeNumericExpressions": false,
 
   "initialState": [
     ["=", "Distance", "WarehouseKL", "CustomerLocation", "85"],
