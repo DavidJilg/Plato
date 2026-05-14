@@ -6,7 +6,7 @@ For detailed information, see `Plato_Specification_1.0.0.pdf`.
 ---
 
 ## Repository Structure
-- `examples/`: Example ontologies and planning artifacts in owl and JSOnto format, PDDL domains/problems, and KTF configuration files.
+- `examples/`: Example ontologies and planning artifacts in owl and JSOnto format,  KTF configuration files, PDDL domains/problems, and plans.
 - `plato_schema/`: The Plato ontology schema in OWL and JSOnto format exports.
 - `Plato_Specification_1.0.0.pdf`: The full specification document for the ontology.
 - `LICENSE`: Platos' license terms (MIT license).
