@@ -14,7 +14,6 @@
       "plato:hasParameter": ["plato:3dPrintingWorkpieceParameter",
                               "plato:3dPrinterParameter",
                               "plato:3DPrintingMaterialParameter",
-                              "plato:3DPrintingHotbedParameter",
                               "plato:3DPrintingNozzleTemperature",
                               "plato:3DPrintingEstimatedPrintTime"],
 
@@ -22,8 +21,7 @@
                                   "plato:PrintWorkpieceEntityOrder1",
                                   "plato:PrintWorkpieceEntityOrder2",
                                   "plato:PrintWorkpieceEntityOrder3",
-                                  "plato:PrintWorkpieceEntityOrder4",
-                                  "plato:PrintWorkpieceEntityOrder5"],
+                                  "plato:PrintWorkpieceEntityOrder4"],
 
       "plato:hasPrecondition": ["plato:PrintWorkpiecePreconditionHotbedHeated",
                                 "plato:PrintWorkpiecePreconditionCanReachNozzleTemperature",

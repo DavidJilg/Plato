@@ -103,7 +103,7 @@
       )
    )
    (:action PrintWorkpiece
-      :parameters (?Workpiece - PrintingWorkpiece ?Printer - Printer ?Material - PrintingMaterial ?HotBedActivated - Boolean ?NozzleTemperature - Temperature ?EstimatedPrintTime - Minutes)
+      :parameters (?Workpiece - PrintingWorkpiece ?Printer - Printer ?Material - PrintingMaterial ?NozzleTemperature - Temperature ?EstimatedPrintTime - Minutes)
       :precondition (and
          (not
             (isPrinted ?Workpiece)
@@ -116,11 +116,11 @@
          (not
             (HeatedBedIsPreheated ?Printer)
          )
-         (increase (EnergyCost) (* (NumericValuesFunction ?EstimatedPrintTime) (EnergyEfficiency ?printer)))
+         (increase (EnergyCost) (* (NumericValuesFunction ?EstimatedPrintTime) (EnergyEfficiency ?Printer)))
          (increase (MachineUsage ?printer) (NumericValuesFunction ?EstimatedPrintTime))
          (increase (MaterialCost) (* (NumericValuesFunction ?EstimatedPrintTime) (MaterialEquationValue_CostMap ?Material)))
       )
    )
 
-   
+
 )

@@ -38,24 +38,21 @@
     
 
 
+    <!-- http://dfki.de/ontologies/plato#version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dfki.de/ontologies/plato#version">
+        <rdfs:comment>Used to specify which version of Plato is used</rdfs:comment>
+        <rdfs:label>version</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/right -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/right"/>
     
 
 
@@ -1627,9 +1624,7 @@
         <hasEntityOrder rdf:resource="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder2"/>
         <hasEntityOrder rdf:resource="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder3"/>
         <hasEntityOrder rdf:resource="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder4"/>
-        <hasEntityOrder rdf:resource="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder5"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#3DPrintingEstimatedPrintTime"/>
-        <hasParameter rdf:resource="http://dfki.de/ontologies/plato#3DPrintingHotbedParameter"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#3DPrintingMaterialParameter"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#3DPrintingNozzleTemperature"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#3dPrinterParameter"/>
@@ -1746,9 +1741,9 @@
 
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder3">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EntityOrder"/>
-        <ordersEntity rdf:resource="http://dfki.de/ontologies/plato#3DPrintingHotbedParameter"/>
+        <ordersEntity rdf:resource="http://dfki.de/ontologies/plato#3DPrintingNozzleTemperature"/>
         <hasOrderPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasOrderPosition>
-        <rdfs:comment>Orders the parameter 3DPrintingHotbedParameter of service PrintWorkpiece</rdfs:comment>
+        <rdfs:comment>Orders the parameter 3DPrintingNozzleTemperature of service PrintWorkpiece</rdfs:comment>
         <rdfs:label>PrintWorkpieceEntityOrder3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1759,23 +1754,10 @@
 
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder4">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EntityOrder"/>
-        <ordersEntity rdf:resource="http://dfki.de/ontologies/plato#3DPrintingNozzleTemperature"/>
-        <hasOrderPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasOrderPosition>
-        <rdfs:comment>Orders the parameter 3DPrintingNozzleTemperature of service PrintWorkpiece</rdfs:comment>
-        <rdfs:label>PrintWorkpieceEntityOrder4</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder5 -->
-
-
-    <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#PrintWorkpieceEntityOrder5">
-        <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EntityOrder"/>
         <ordersEntity rdf:resource="http://dfki.de/ontologies/plato#3DPrintingEstimatedPrintTime"/>
-        <hasOrderPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasOrderPosition>
+        <hasOrderPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasOrderPosition>
         <rdfs:comment>Orders the parameter 3DPrintingEstimatedPrintTime of service PrintWorkpiece</rdfs:comment>
-        <rdfs:label>PrintWorkpieceEntityOrder5</rdfs:label>
+        <rdfs:label>PrintWorkpieceEntityOrder4</rdfs:label>
     </owl:NamedIndividual>
     
 

@@ -47,10 +47,10 @@
   {
     "class": "plato:EntityOrder",
     "rdfs:label": "PrintWorkpieceEntityOrder3",
-    "rdfs:comment": "Orders the parameter 3DPrintingHotbedParameter of service PrintWorkpiece",
+    "rdfs:comment": "Orders the parameter 3DPrintingNozzleTemperature of service PrintWorkpiece",
     "objectProperties":
     {
-      "plato:ordersEntity": "plato:3DPrintingHotbedParameter"
+      "plato:ordersEntity": "plato:3DPrintingNozzleTemperature"
     },
     "dataProperties":
     {
@@ -62,21 +62,6 @@
   {
     "class": "plato:EntityOrder",
     "rdfs:label": "PrintWorkpieceEntityOrder4",
-    "rdfs:comment": "Orders the parameter 3DPrintingNozzleTemperature of service PrintWorkpiece",
-    "objectProperties":
-    {
-      "plato:ordersEntity": "plato:3DPrintingNozzleTemperature"
-    },
-    "dataProperties":
-    {
-      "plato:hasOrderPosition": "4"
-    }
-  },
-
-  "plato:PrintWorkpieceEntityOrder5":
-  {
-    "class": "plato:EntityOrder",
-    "rdfs:label": "PrintWorkpieceEntityOrder5",
     "rdfs:comment": "Orders the parameter 3DPrintingEstimatedPrintTime of service PrintWorkpiece",
     "objectProperties":
     {
@@ -84,7 +69,7 @@
     },
     "dataProperties":
     {
-      "plato:hasOrderPosition": "5"
+      "plato:hasOrderPosition": "4"
     }
   },
 
