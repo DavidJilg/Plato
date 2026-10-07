@@ -3,7 +3,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block1OnBlock2",
-    "rdfs:comment": "States that block1 is placed on top of block2",
+    "plato:comment": "States that block1 is placed on top of block2",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock1",
@@ -16,7 +16,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block1Held",
-    "rdfs:comment": "States that block1 is currently being held",
+    "plato:comment": "States that block1 is currently being held",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock1",
@@ -28,7 +28,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block2Held",
-    "rdfs:comment": "States that block2 is currently being held",
+    "plato:comment": "States that block2 is currently being held",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock2",
@@ -40,7 +40,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block3Held",
-    "rdfs:comment": "States that block3 is currently being held",
+    "plato:comment": "States that block3 is currently being held",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock3",
@@ -52,7 +52,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block1OnGround",
-    "rdfs:comment": "States that block1 is currently placed on the ground",
+    "plato:comment": "States that block1 is currently placed on the ground",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock1",
@@ -64,7 +64,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block1TopClear",
-    "rdfs:comment": "States that block1 has no other block on top",
+    "plato:comment": "States that block1 has no other block on top",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock1",
@@ -76,7 +76,7 @@
   {
     "class": "plato:AWSSentence",
     "rdfs:label": "Block2TopClear",
-    "rdfs:comment": "States that block2 has no other block on top",
+    "plato:comment": "States that block2 has no other block on top",
     "objectProperties":
     {
       "plato:hasAWSSubject": "plato:ParameterBlock2",
@@ -91,7 +91,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "TopClearBlock1Statement",
-    "rdfs:comment": "States that block1 has no other block placed on top of it.",
+    "plato:comment": "States that block1 has no other block placed on top of it.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1TopClear"
     },
@@ -104,7 +104,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "TopClearBlock2Statement",
-    "rdfs:comment": "States that block2 has no other block placed on top of it.",
+    "plato:comment": "States that block2 has no other block placed on top of it.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block2TopClear"
     },
@@ -117,7 +117,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "TopNotClearBlock2Statement",
-    "rdfs:comment": "States that block2 has another block on top of it.",
+    "plato:comment": "States that block2 has another block on top of it.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block2TopClear"
     },
@@ -131,7 +131,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "OnGroundBlock1Statement",
-    "rdfs:comment": "States that block1 is placed on the ground.",
+    "plato:comment": "States that block1 is placed on the ground.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnGround"
     },
@@ -144,7 +144,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "OnGroundBlock1StatementAtEnd",
-    "rdfs:comment": "States that block1 is placed on the ground.",
+    "plato:comment": "States that block1 is placed on the ground.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnGround"
     },
@@ -157,7 +157,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "NotOnGroundBlock1Statement",
-    "rdfs:comment": "States that block1 is placed on the ground.",
+    "plato:comment": "States that block1 is placed on the ground.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnGround"
     },
@@ -171,7 +171,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "HoldingBlock1Statement",
-    "rdfs:comment": "States that block1 is currently being held.",
+    "plato:comment": "States that block1 is currently being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1Held"
     },
@@ -184,7 +184,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "HoldingBlock1StatementAtStart",
-    "rdfs:comment": "States that block1 is currently being held.",
+    "plato:comment": "States that block1 is currently being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1Held"
     },
@@ -197,7 +197,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "NotHoldingBlock1Statement",
-    "rdfs:comment": "States that block1 is currently not being held.",
+    "plato:comment": "States that block1 is currently not being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1Held"
     },
@@ -211,7 +211,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "NotHoldingBlock1StatementAtEnd",
-    "rdfs:comment": "States that block1 is currently not being held.",
+    "plato:comment": "States that block1 is currently not being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1Held"
     },
@@ -225,7 +225,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "HoldingBlock2Statement",
-    "rdfs:comment": "States that block2 is currently not being held.",
+    "plato:comment": "States that block2 is currently not being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block2Held"
     },
@@ -239,7 +239,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "HoldingBlock3Statement",
-    "rdfs:comment": "States that block1 is currently not being held.",
+    "plato:comment": "States that block1 is currently not being held.",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block3Held"
     },
@@ -253,7 +253,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "Block1NotOnBlock2Statement",
-    "rdfs:comment": "States that block1 is currently not on top of block2",
+    "plato:comment": "States that block1 is currently not on top of block2",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnBlock2"
     },
@@ -267,7 +267,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "Block1OnBlock2Statement",
-    "rdfs:comment": "States that block1 is currently on top of block2",
+    "plato:comment": "States that block1 is currently on top of block2",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnBlock2"
     },
@@ -280,7 +280,7 @@
   {
     "class": "plato:Statement",
     "rdfs:label": "Block1OnBlock2StatementAtEnd",
-    "rdfs:comment": "States that block1 is currently on top of block2",
+    "plato:comment": "States that block1 is currently on top of block2",
     "objectProperties": {
       "plato:hasAWSSentence": "plato:Block1OnBlock2"
     },
@@ -293,7 +293,7 @@
   {
     "class": "plato:AdvancedStatement",
     "rdfs:label": "NotHoldingAnyBlock2",
-    "rdfs:comment": "An advanced statement for a universal precondition that states that no block is being held",
+    "plato:comment": "An advanced statement for a universal precondition that states that no block is being held",
     "objectProperties": {
       "plato:hasPrecondition": "plato:HoldingBlock2Statement",
       "plato:hasParameter": "plato:ParameterBlock2"
@@ -308,7 +308,7 @@
   {
     "class": "plato:AdvancedStatement",
     "rdfs:label": "NotHoldingAnyBlock3",
-    "rdfs:comment": "An advanced statement for a universal precondition that states that no block is being held",
+    "plato:comment": "An advanced statement for a universal precondition that states that no block is being held",
     "objectProperties": {
       "plato:hasPrecondition": "plato:HoldingBlock3Statement",
       "plato:hasParameter": "plato:ParameterBlock3"

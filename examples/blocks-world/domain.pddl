@@ -1,9 +1,8 @@
 (define (domain blocksworld_domain)
    (:requirements :negative-preconditions :typing)
    (:types
-      Boolean - root
-      block - root
-      root - object
+      Boolean - object
+      block - object
    )
    (:constants
    )

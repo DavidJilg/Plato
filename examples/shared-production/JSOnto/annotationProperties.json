@@ -5,11 +5,16 @@
     "rdfs:comment": "Used to set a name that is used to represent the object in a planning domain",
     "range": "xsd:string"
   },
-
+  "plato:description":
+  {
+    "rdfs:label": "description",
+    "rdfs:comment": "Used to provide a description that helps with identifying the purpose of a planning construct.",
+    "range": "xsd:string"
+  },
   "plato:version":
-   {
-     "rdfs:label": "version",
-     "rdfs:comment": "Used to specify which version of Plato is used",
-     "range": "xsd:string"
-   }
+  {
+    "rdfs:label": "version",
+    "rdfs:comment": "Used to specify which version of Plato is used",
+    "range": "xsd:string"
+  }
 }

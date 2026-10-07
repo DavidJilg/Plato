@@ -4,7 +4,7 @@
     "class": "plato:Service",
     "rdfs:label": "pick-up-from-ground",
     "plato:hasPlanningName": "pick-up-from-ground",
-    "rdfs:comment": "Picks up a block from the ground",
+    "plato:description": "Picks up a block from the ground",
     "objectProperties":
     {
       "plato:hasParameter": "plato:ParameterBlock1",
@@ -27,7 +27,7 @@
     "class": "plato:Service",
     "rdfs:label": "pick-up-from-block",
     "plato:hasPlanningName": "pick-up-from-block",
-    "rdfs:comment": "Picks up a block from another block",
+    "plato:description": "Picks up a block from another block",
     "objectProperties":
     {
       "plato:hasParameter": ["plato:ParameterBlock1", "plato:ParameterBlock2"],
@@ -52,7 +52,7 @@
     "class": "plato:Service",
     "rdfs:label": "put-down-on-ground",
     "plato:hasPlanningName": "put-down-on-ground",
-    "rdfs:comment": "Puts down the currently held block onto the ground",
+    "plato:description": "Puts down the currently held block onto the ground",
     "objectProperties":
     {
       "plato:hasParameter": "plato:ParameterBlock1",
@@ -71,7 +71,7 @@
     "class": "plato:Service",
     "rdfs:label": "put-down-on-block",
     "plato:hasPlanningName": "put-down-on-block",
-    "rdfs:comment": "Puts down the currently held block onto the ground",
+    "plato:description": "Puts down the currently held block onto the ground",
     "objectProperties":
     {
       "plato:hasParameter": ["plato:ParameterBlock1", "plato:ParameterBlock2"],
