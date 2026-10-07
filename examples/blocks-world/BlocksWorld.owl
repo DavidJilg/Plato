@@ -954,7 +954,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#AdditionOperator">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EquationOperator"/>
         <hasOperatorValue>+</hasOperatorValue>
-        <plato:comment>The &apos;+&apos; operator</plato:comment>
+        <plato:description>The &apos;+&apos; operator</plato:description>
         <rdfs:label>AdditionOperator</rdfs:label>
     </owl:NamedIndividual>
     
@@ -967,7 +967,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#Holding"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
-        <plato:comment>States that block1 is currently being held</plato:comment>
+        <plato:description>States that block1 is currently being held</plato:description>
         <rdfs:label>Block1Held</rdfs:label>
     </owl:NamedIndividual>
     
@@ -981,7 +981,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnBlock2"/>
         <hasTimeScope>AtStart</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block1 is currently not on top of block2</plato:comment>
+        <plato:description>States that block1 is currently not on top of block2</plato:description>
         <rdfs:label>Block1NotOnBlock2Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -995,7 +995,7 @@
         <hasAWSObject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock2"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#On"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
-        <plato:comment>States that block1 is placed on top of block2</plato:comment>
+        <plato:description>States that block1 is placed on top of block2</plato:description>
         <rdfs:label>Block1OnBlock2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1008,7 +1008,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnBlock2"/>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>States that block1 is currently on top of block2</plato:comment>
+        <plato:description>States that block1 is currently on top of block2</plato:description>
         <rdfs:label>Block1OnBlock2Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1021,7 +1021,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnBlock2"/>
         <hasTimeScope>AtEnd</hasTimeScope>
-        <plato:comment>States that block1 is currently on top of block2</plato:comment>
+        <plato:description>States that block1 is currently on top of block2</plato:description>
         <rdfs:label>Block1OnBlock2StatementAtEnd</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1034,7 +1034,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#OnGround"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
-        <plato:comment>States that block1 is currently placed on the ground</plato:comment>
+        <plato:description>States that block1 is currently placed on the ground</plato:description>
         <rdfs:label>Block1OnGround</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1047,7 +1047,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#TopClear"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
-        <plato:comment>States that block1 has no other block on top</plato:comment>
+        <plato:description>States that block1 has no other block on top</plato:description>
         <rdfs:label>Block1TopClear</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1060,7 +1060,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#Holding"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock2"/>
-        <plato:comment>States that block2 is currently being held</plato:comment>
+        <plato:description>States that block2 is currently being held</plato:description>
         <rdfs:label>Block2Held</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1073,7 +1073,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#TopClear"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock2"/>
-        <plato:comment>States that block2 has no other block on top</plato:comment>
+        <plato:description>States that block2 has no other block on top</plato:description>
         <rdfs:label>Block2TopClear</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1086,7 +1086,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#AWSSentence"/>
         <hasAWSPredicate rdf:resource="http://dfki.de/ontologies/plato#Holding"/>
         <hasAWSSubject rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock3"/>
-        <plato:comment>States that block3 is currently being held</plato:comment>
+        <plato:description>States that block3 is currently being held</plato:description>
         <rdfs:label>Block3Held</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1098,7 +1098,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#Boolean">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Type"/>
         <hasPlanningName>Boolean</hasPlanningName>
-        <plato:comment>A boolean value</plato:comment>
+        <plato:description>A boolean value</plato:description>
         <rdfs:label>Boolean</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1110,7 +1110,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#DivisionOperator">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EquationOperator"/>
         <hasOperatorValue>/</hasOperatorValue>
-        <plato:comment>The &apos;/&apos; operator</plato:comment>
+        <plato:description>The &apos;/&apos; operator</plato:description>
         <rdfs:label>DivisionOperator</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1122,7 +1122,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#ExponentialOperator">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EquationOperator"/>
         <hasOperatorValue>^</hasOperatorValue>
-        <plato:comment>The &apos;pow&apos; (exponential) operator</plato:comment>
+        <plato:description>The &apos;pow&apos; (exponential) operator</plato:description>
         <rdfs:label>ExponentialOperator</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1135,7 +1135,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Entity"/>
         <hasType rdf:resource="http://dfki.de/ontologies/plato#Boolean"/>
         <hasPlanningName>False</hasPlanningName>
-        <plato:comment>The Boolean Value of &apos;False&apos;</plato:comment>
+        <plato:description>The Boolean Value of &apos;False&apos;</plato:description>
         <rdfs:label>False</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1148,7 +1148,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Predicate"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
         <hasPlanningName>Holding</hasPlanningName>
-        <plato:comment>A predicate that can be used to specify that a certain block is currently being held.</plato:comment>
+        <plato:description>A predicate that can be used to specify that a certain block is currently being held.</plato:description>
         <rdfs:label>Holding</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1161,7 +1161,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1Held"/>
         <hasTimeScope>AtEnd</hasTimeScope>
-        <plato:comment>States that block1 is currently being held.</plato:comment>
+        <plato:description>States that block1 is currently being held.</plato:description>
         <rdfs:label>HoldingBlock1Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1174,7 +1174,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1Held"/>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>States that block1 is currently being held.</plato:comment>
+        <plato:description>States that block1 is currently being held.</plato:description>
         <rdfs:label>HoldingBlock1StatementAtStart</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1188,7 +1188,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block2Held"/>
         <hasTimeScope>AtStart</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block2 is currently not being held.</plato:comment>
+        <plato:description>States that block2 is currently not being held.</plato:description>
         <rdfs:label>HoldingBlock2Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1202,7 +1202,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block3Held"/>
         <hasTimeScope>AtStart</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block1 is currently not being held.</plato:comment>
+        <plato:description>States that block1 is currently not being held.</plato:description>
         <rdfs:label>HoldingBlock3Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1214,7 +1214,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#MultiplicationOperator">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EquationOperator"/>
         <hasOperatorValue>*</hasOperatorValue>
-        <plato:comment>The &apos;*&apos; operator</plato:comment>
+        <plato:description>The &apos;*&apos; operator</plato:description>
         <rdfs:label>MultiplicationOperator</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1229,7 +1229,7 @@
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#HoldingBlock2Statement"/>
         <hasLogicalOperator>forall</hasLogicalOperator>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>An advanced statement for a universal precondition that states that no block is being held</plato:comment>
+        <plato:description>An advanced statement for a universal precondition that states that no block is being held</plato:description>
         <rdfs:label>NotHoldingAnyBlock2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1244,7 +1244,7 @@
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#HoldingBlock3Statement"/>
         <hasLogicalOperator>forall</hasLogicalOperator>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>An advanced statement for a universal precondition that states that no block is being held</plato:comment>
+        <plato:description>An advanced statement for a universal precondition that states that no block is being held</plato:description>
         <rdfs:label>NotHoldingAnyBlock3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1258,7 +1258,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1Held"/>
         <hasTimeScope>AtStart</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block1 is currently not being held.</plato:comment>
+        <plato:description>States that block1 is currently not being held.</plato:description>
         <rdfs:label>NotHoldingBlock1Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1272,7 +1272,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1Held"/>
         <hasTimeScope>AtEnd</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block1 is currently not being held.</plato:comment>
+        <plato:description>States that block1 is currently not being held.</plato:description>
         <rdfs:label>NotHoldingBlock1StatementAtEnd</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1286,7 +1286,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnGround"/>
         <hasTimeScope>AtEnd</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block1 is placed on the ground.</plato:comment>
+        <plato:description>States that block1 is placed on the ground.</plato:description>
         <rdfs:label>NotOnGroundBlock1Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1302,7 +1302,7 @@
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock2"/>
         <hasPlanningName>On</hasPlanningName>
-        <plato:comment>A predicate that can be used to specify that a certain block is stacked on top of another block.</plato:comment>
+        <plato:description>A predicate that can be used to specify that a certain block is stacked on top of another block.</plato:description>
         <rdfs:label>On</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1315,7 +1315,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Predicate"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
         <hasPlanningName>OnGround</hasPlanningName>
-        <plato:comment>A predicate that can be used to specify that a certain block is placed on ground.</plato:comment>
+        <plato:description>A predicate that can be used to specify that a certain block is placed on ground.</plato:description>
         <rdfs:label>OnGround</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1328,7 +1328,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnGround"/>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>States that block1 is placed on the ground.</plato:comment>
+        <plato:description>States that block1 is placed on the ground.</plato:description>
         <rdfs:label>OnGroundBlock1Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1341,7 +1341,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1OnGround"/>
         <hasTimeScope>AtEnd</hasTimeScope>
-        <plato:comment>States that block1 is placed on the ground.</plato:comment>
+        <plato:description>States that block1 is placed on the ground.</plato:description>
         <rdfs:label>OnGroundBlock1StatementAtEnd</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1354,7 +1354,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Parameter"/>
         <hasType rdf:resource="http://dfki.de/ontologies/plato#block"/>
         <hasPlanningName>block1</hasPlanningName>
-        <plato:comment>A parameter for a block</plato:comment>
+        <plato:description>A parameter for a block</plato:description>
         <rdfs:label>ParameterBlock1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1379,7 +1379,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Parameter"/>
         <hasType rdf:resource="http://dfki.de/ontologies/plato#block"/>
         <hasPlanningName>block2</hasPlanningName>
-        <plato:comment>A parameter for a block</plato:comment>
+        <plato:description>A parameter for a block</plato:description>
         <rdfs:label>ParameterBlock2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1404,7 +1404,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Parameter"/>
         <hasType rdf:resource="http://dfki.de/ontologies/plato#block"/>
         <hasPlanningName>block3</hasPlanningName>
-        <plato:comment>A parameter for a block</plato:comment>
+        <plato:description>A parameter for a block</plato:description>
         <rdfs:label>ParameterBlock3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1416,7 +1416,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#SubtractionOperator">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#EquationOperator"/>
         <hasOperatorValue>-</hasOperatorValue>
-        <plato:comment>The &apos;-&apos; operator</plato:comment>
+        <plato:description>The &apos;-&apos; operator</plato:description>
         <rdfs:label>SubtractionOperator</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1429,7 +1429,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Predicate"/>
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
         <hasPlanningName>TopClear</hasPlanningName>
-        <plato:comment>A predicate that can be used to specify that a certain block has no other block placed on top of it.</plato:comment>
+        <plato:description>A predicate that can be used to specify that a certain block has no other block placed on top of it.</plato:description>
         <rdfs:label>TopClear</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1442,7 +1442,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block1TopClear"/>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>States that block1 has no other block placed on top of it.</plato:comment>
+        <plato:description>States that block1 has no other block placed on top of it.</plato:description>
         <rdfs:label>TopClearBlock1Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1455,7 +1455,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Statement"/>
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block2TopClear"/>
         <hasTimeScope>AtStart</hasTimeScope>
-        <plato:comment>States that block2 has no other block placed on top of it.</plato:comment>
+        <plato:description>States that block2 has no other block placed on top of it.</plato:description>
         <rdfs:label>TopClearBlock2Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1469,7 +1469,7 @@
         <hasAWSSentence rdf:resource="http://dfki.de/ontologies/plato#Block2TopClear"/>
         <hasTimeScope>AtEnd</hasTimeScope>
         <isNegated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isNegated>
-        <plato:comment>States that block2 has another block on top of it.</plato:comment>
+        <plato:description>States that block2 has another block on top of it.</plato:description>
         <rdfs:label>TopNotClearBlock2Statement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1482,7 +1482,7 @@
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Entity"/>
         <hasType rdf:resource="http://dfki.de/ontologies/plato#Boolean"/>
         <hasPlanningName>True</hasPlanningName>
-        <plato:comment>The Boolean Value of &apos;True&apos;</plato:comment>
+        <plato:description>The Boolean Value of &apos;True&apos;</plato:description>
         <rdfs:label>True</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1494,7 +1494,7 @@
     <owl:NamedIndividual rdf:about="http://dfki.de/ontologies/plato#block">
         <rdf:type rdf:resource="http://dfki.de/ontologies/plato#Type"/>
         <hasPlanningName>block</hasPlanningName>
-        <plato:comment>A block in a Blocks-world planning domain</plato:comment>
+        <plato:description>A block in a Blocks-world planning domain</plato:description>
         <rdfs:label>block</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1516,7 +1516,7 @@
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#NotHoldingAnyBlock3"/>
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#TopClearBlock1Statement"/>
         <hasPlanningName>pick-up-from-block</hasPlanningName>
-        <plato:comment>Picks up a block from another block</plato:comment>
+        <plato:description>Picks up a block from another block</plato:description>
         <rdfs:label>pick-up-from-block</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1534,7 +1534,7 @@
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#OnGroundBlock1Statement"/>
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#TopClearBlock1Statement"/>
         <hasPlanningName>pick-up-from-ground</hasPlanningName>
-        <plato:comment>Picks up a block from the ground</plato:comment>
+        <plato:description>Picks up a block from the ground</plato:description>
         <rdfs:label>pick-up-from-ground</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1555,7 +1555,7 @@
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#HoldingBlock1StatementAtStart"/>
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#TopClearBlock2Statement"/>
         <hasPlanningName>put-down-on-block</hasPlanningName>
-        <plato:comment>Puts down the currently held block onto the ground</plato:comment>
+        <plato:description>Puts down the currently held block onto the ground</plato:description>
         <rdfs:label>put-down-on-block</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1571,7 +1571,7 @@
         <hasParameter rdf:resource="http://dfki.de/ontologies/plato#ParameterBlock1"/>
         <hasPrecondition rdf:resource="http://dfki.de/ontologies/plato#HoldingBlock1StatementAtStart"/>
         <hasPlanningName>put-down-on-ground</hasPlanningName>
-        <plato:comment>Puts down the currently held block onto the ground</plato:comment>
+        <plato:description>Puts down the currently held block onto the ground</plato:description>
         <rdfs:label>put-down-on-ground</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>

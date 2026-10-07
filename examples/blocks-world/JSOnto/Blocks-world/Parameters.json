@@ -3,7 +3,7 @@
     "class": "plato:Parameter",
     "rdfs:label": "ParameterBlock1",
     "plato:hasPlanningName": "block1",
-    "plato:comment": "A parameter for a block",
+    "plato:description": "A parameter for a block",
     "objectProperties":
     {
       "plato:hasType": "plato:block"
@@ -14,7 +14,7 @@
     "class": "plato:Parameter",
     "rdfs:label": "ParameterBlock2",
     "plato:hasPlanningName": "block2",
-    "plato:comment": "A parameter for a block",
+    "plato:description": "A parameter for a block",
     "objectProperties":
     {
       "plato:hasType": "plato:block"
@@ -25,7 +25,7 @@
     "class": "plato:Parameter",
     "rdfs:label": "ParameterBlock3",
     "plato:hasPlanningName": "block3",
-    "plato:comment": "A parameter for a block",
+    "plato:description": "A parameter for a block",
     "objectProperties":
     {
       "plato:hasType": "plato:block"

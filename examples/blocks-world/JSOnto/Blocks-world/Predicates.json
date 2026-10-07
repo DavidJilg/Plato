@@ -4,7 +4,7 @@
     "class": "plato:Predicate",
     "rdfs:label": "On",
     "plato:hasPlanningName": "On",
-    "plato:comment": "A predicate that can be used to specify that a certain block is stacked on top of another block.",
+    "plato:description": "A predicate that can be used to specify that a certain block is stacked on top of another block.",
     "objectProperties":
     {
       "plato:hasParameter": ["plato:ParameterBlock1", "plato:ParameterBlock2"],
@@ -17,7 +17,7 @@
     "class": "plato:Predicate",
     "rdfs:label": "OnGround",
     "plato:hasPlanningName": "OnGround",
-    "plato:comment": "A predicate that can be used to specify that a certain block is placed on ground.",
+    "plato:description": "A predicate that can be used to specify that a certain block is placed on ground.",
     "objectProperties":
     {
       "plato:hasParameter": "plato:ParameterBlock1"
@@ -29,7 +29,7 @@
     "class": "plato:Predicate",
     "rdfs:label": "Holding",
     "plato:hasPlanningName": "Holding",
-    "plato:comment": "A predicate that can be used to specify that a certain block is currently being held.",
+    "plato:description": "A predicate that can be used to specify that a certain block is currently being held.",
     "objectProperties":
     {
       "plato:hasParameter": "plato:ParameterBlock1"
@@ -41,7 +41,7 @@
     "class": "plato:Predicate",
     "rdfs:label": "TopClear",
     "plato:hasPlanningName": "TopClear",
-    "plato:comment": "A predicate that can be used to specify that a certain block has no other block placed on top of it.",
+    "plato:description": "A predicate that can be used to specify that a certain block has no other block placed on top of it.",
     "objectProperties":
     {
       "plato:hasParameter": "plato:ParameterBlock1"
