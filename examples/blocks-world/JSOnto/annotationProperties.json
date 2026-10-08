@@ -11,5 +11,12 @@
      "rdfs:label": "version",
      "rdfs:comment": "Used to specify which version of Plato is used",
      "range": "xsd:string"
-   }
+   },
+
+  "plato:description":
+  {
+    "rdfs:label": "description",
+    "rdfs:comment": "Used to provide a description that helps with identifying the purpose of a planning construct.",
+    "range": "xsd:string"
+  }
 }
